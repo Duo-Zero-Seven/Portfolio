@@ -1,0 +1,4 @@
+﻿  animatedsprite.cpp
+c:\users\reneg\desktop\svn working copy\students\tim.grey\gp2dframework2019-spaceinvaders\framework\animatedsprite.cpp(49): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\reneg\desktop\svn working copy\students\tim.grey\gp2dframework2019-spaceinvaders\framework\animatedsprite.cpp(89): warning C4018: '>=': signed/unsigned mismatch
+  Framework.vcxproj -> C:\Users\Reneg\Desktop\SVN Working Copy\students\tim.grey\GP2DFramework2019-SpaceInvaders\Debug\Framework.exe
