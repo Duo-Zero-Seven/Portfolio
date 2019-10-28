@@ -1,0 +1,13 @@
+$sqlTable = "CREATE TABLE IF NOT EXISTS cab_bookings
+(
+	booking_id int AUTO_INCREMENT, 
+	booking_number VARCHAR(12), 
+	customer_name VARCHAR(20), 
+	customer_phone VARCHAR(15), 
+	customer_pickup_address VARCHAR (40), 
+	customer_destination VARCHAR(30), 
+	customer_pickup_date VARCHAR(10), 
+	customer_pickup_time VARCHAR(5), 
+	booking_assignment_status VARCHAR(10), 
+	PRIMARY KEY(booking_id)
+)";

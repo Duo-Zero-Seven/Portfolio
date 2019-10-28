@@ -1,0 +1,27 @@
+<html>
+<head> 
+<title>Administration</title> 
+<script type = "text/javascript" src = "xhr.js"></script>
+<script type = "text/javascript" src = "administration.js"></script>
+</head> 
+<body>
+<h1>Manage Bookings</h1>
+<!Display table of results up here>
+<div id = "confirmation"> 
+<p></p>  
+</div> 
+<form>
+	<!Unassigned Bookings screen button and function activation>
+	<input name = "submit" type = "button" onClick = "administration(
+								 'administration.php', 'confirmation', 'date'
+								 )" value = 'Request Unassigned Bookings'></br></br>
+								 
+	<!Booking assignment screen button and function activation with booking reference number passthrough>
+	<input type = "text" name = "bookingRef">
+	<input name = "submit" type = "button" onClick = "bookingassignment(
+								    'booking_assignment.php','confirmation', bookingRef.value
+								    ) " value = "Assign Driver">
+<input type = "button" onclick = "location.href='http://wdg7741.cmslamp14.aut.ac.nz/assign2/OnlineTaxi.php';" value = "Home"/>
+</form>
+</body>
+</html>

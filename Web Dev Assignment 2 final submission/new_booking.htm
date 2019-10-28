@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv = "content-type" content = "text/html; charset = UTF-8"/>
+<title>Booking Form</title>
+<script type = "text/javascript" src = "xhr.js"></script>
+<script type = "text/javascript" src = "booking.js"> </script>
+</head>
+<body>
+<h1>Online Taxi!</h1>
+
+<br>Please fill in the form below to book with Online Taxi.</br>
+<form>
+<br><strong>Contact Details:</strong></br>
+<br>Name: 			<input type = "text" name = "custName"></br> 
+<br>Contact phone: 		<input type = "text" name = "custPhone"></br> 
+<br><strong>Pickup Address:</strong></br>  
+<br>Street number: 		<input type = "text" name = "streetNo"></br>
+<br>Street name: 		<input type = "text" name = "streetName"></br>
+<br>Suburb: 			<input type = "text" name = "suburb"></br> 
+<br>Pick up date: 		<input type = "date" name = "pickupDate"></br> 
+<br>Pick up time: 		<input type = "time" name = "pickupTime"></br>
+<br><strong>Destination Details:</strong></br>  
+<br>Destination suburb: 	<input type = "text" name = "destSuburb"></br>
+<br>*All fields must be completed*</br>
+	
+<input name = "submit" type = "button" onClick = "booking('booking_process.php','confirmation', 
+							custName.value, custPhone.value, pickupDate.value, 
+							pickupTime.value, streetNo.value, streetName.value, 
+							suburb.value, destSuburb.value)" 
+							value = "Submit Booking">
+
+<input type = "button" onclick = "location.href='http://wdg7741.cmslamp14.aut.ac.nz/assign2/OnlineTaxi.php';" value = "Home" />
+</form>
+<div id = "confirmation">
+<p></p>
+</div>
+</body>
+</html>
